@@ -14,7 +14,7 @@ struct number_list {
 void append_number(const int value, struct number_list *list)
 {
 	struct number *new_num;
-	new_num = malloc(sizeof(struct number_list));
+	new_num = malloc(sizeof(struct number));
 	if(!new_num) {
 		perror("malloc");
 		exit(EXIT_FAILURE);
